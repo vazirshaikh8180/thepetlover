@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="robots" content="INDEX, FOLLOW">
+    <meta name="description" content="The Pet Lover (Pet care, grooming, feeder and Blog to understand, knowledge for the pet lover)">
+    <meta name="keywords" content="Top-selling, Top Reviews Pet Products and Pet Food for dogs, cats, birds, fish & small pets and the pet lover blogs about dogs, cats, fish & small pets to keep your pets happy, healthy and active.">
+        
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="thepetlover.in" />
+<meta property="og:url" content="http://thepetlover.in/" />
+<meta property="og:site_name" content="thepetlover" />
+
+	<title>Read More</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+
+    <script src="main.js"> </script>
+</head>
+<body>
+
+<div class="media" data-pages="1">
+    <h2>Visit Budapest</h2>
+    
+    <div class="img"><img src="img/szechenyi.jpg" style="height:200px;"> </div>
+    <p><i>Széchenyi Thermal Baths </i></p>
+    <p>
+        Budapest is the capital city of Hungary. It is best known for its arts and culture. It is a relatively small city, however there are much to see and do.
+        <span class="dots">...</span>
+        <span class="more" style="display: none;">Situated on thermal springs, there are many naturally heated baths to relax in, the Széchenyi baths are the largest with 15 indoor baths and 3 outdoor. There are many spectacular viewpoints in Budapest, great for capturing the views of the city. From 360 panoramic views up at St Stephens Basilica to a wide view of the parliament and the River at Fisherman’s Bastion. Visit the Museum of Fine Arts and enjoy a day amongst famous European art. Classical music lovers will appreciate a performance at the Academy of Music.</span>
+    </p>
+    <button onclick="readMore('1')" class="myBtn">Read more</button>
+</div>
+<br>
+<div class="media" data-pages="2">
+    <h2>Visit Barcelona</h2>
+    
+    <div class="img"><img src="img/guell-park.jpg" style="height:200px;"></div>
+    <p><i>Park Güell </i></p>
+    <p>
+        Barcelona, framed for its individuality, cultural interest, and physical beauty, home to art and architecture. Facing the Mediterranean to the southeast,
+        <span class="dots">...</span>
+        <span class="more" style="display: none;"> the city is one of a kind. Upon visiting make sure you visit the spectacular and unique Park Güell which was firstly designed for a town up in the mountains by artist Antoni Gaudí. Gaudí's work is admired by architects around the World as being one of the most unique and distinctive styles in modern architecture. Other places worth visiting is the La Sagrada Família, is a giant basilica. With beaches on your doorstop, and art and city culture, this diverse city has everything to offer.</span>
+    </p>
+    <button onclick="readMore('2')" class="myBtn">Read more</button>
+</div>
+
+
+<script type="text/javascript">
+	function readMore(pages) {
+    let dots = document.querySelector(`.media[data-pages="${pages}"] .dots`);
+    let moreText = document.querySelector(`.media[data-pages="${pages}"] .more`); 
+    let btnText = document.querySelector(`.media[data-pages="${pages}"] .myBtn`);
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.textContent = "Read more";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.textContent = "Read less"; 
+        moreText.style.display = "inline";
+    }
+}
+</script>
+</body>
+</html>
